@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --rojo: #097be5;
+    --fondo: #070707; 
+}
+
+*  {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+  background: var(--fondo);
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #aaa; 
+  text-decoration: none;
+  margin:20px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+header nav a:hover, head nav a:active {
+  color: #fff; 
+}
+
+.buscar {
+  color:#000; 
+  font-weight: 700;
+  height: 2rem;
+  margin: 10px;
+  text-align: center;
+}
+
+.boton-buscar {
+  width: 40px;
+  height: 32px;
+}
+
+.boton-buscar:hover {
+  background-color:  rgb(64, 174, 224);
+  color: #fff; 
+
+}
+
+/* ------- Filme Principal -------- */
+.filme-principal {
+font-size: 16px;
+min-height: 40.62em;
+color: #fff; 
+background: linear-gradient(rgba(0, 0, 0,  .50) 0%, rgba(0, 0,0, .50) 100% ), url(../img/lucas.jpg);
+background-position: center center;
+background-size: cover;
+margin-bottom: 3.12em;
+display: flex;
+align-items: flex-end;
+}
+
+.filme-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.filme-principal .title {
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.filme-principal .description {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.filme-principal .boton {
+  background:rgba(0, 0,0, 0.5);
+  border: none; 
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em; 
+  color: #fff;
+  margin-right: 1.25em; 
+  cursor: pointer; 
+  transition: .3s, ease all;
+  font-size: 1.12em;
+
+}
+
+.filme-principal .boton i {
+  margin-right: 1.25em;
+}
+
+.filme-principal .boton:hover {
+  background: #fff;
+  color: #000;
+}
+
+.filmes-recomendados  h1{
+  color: #fff; 
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+
+/* -------   Contenedor ppal ------ */
+.filmes-recomendados .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* -------   Carousel------ */
+.filmes-recomendados .contenedor-carousel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 35vh;
+  padding: 20px;
+  grid-column: 1 / -1;
+  /*overflow: hidden;*/
+}  
+
+/* -------   Formato Navegador responsavise------ */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+  }
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.filme-principal {
+  font-size: 14px;
+}
+
+.filme-principal .description {
+  max-width: 100%;
+}
+
+.filmes-recomendados .contenedor-carousel  {
+  overflow: visible; 
+}
+
+.filmes-recomendados .contenedor-carousel .carousel .pelicula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+}
+
+.filmes-recomendados .indicadores, .filmes-recomendados .flecha-derecha, .filmes-recomendados .flecha-izquierda {
+  display: none; 
+}
+
+
+/* ----- Formulario ------- */
+
+main.fondo {
+  display: grid; 
+  grid-template-columns: 600px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.formulario {
+  /* Centrar el formulario en la imagen */
+display: flex;
+position: relative;
+height: 450px;
+width: 100%;
+background-image:url(../img/phone.png);
+background-size: cover;
+background-position: center;
+font-family: Montserrat;
+font-weight:bold; 
+justify-self: center;
+align-self: center;
+justify-content: center;
+align-items: center;
+
+}
+
+.formulario-1  {
+display: block;
+position: absolute;
+width: 37.5vh;
+justify-self: center; 
+align-content: center;
+padding: 25px;
+
+}
+
+.e-mail {
+width: 80%;
+height: 8px;
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 10px;
+} 
+
+
+.contraseña {
+width: 60%;
+height: 8px;
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+.e-mail-text, .contraseña-text {
+  color: #0f0f0f;
+  font-size: 10px; 
+  font-weight: 700;
+}
+
+.olvide-contraseña {
+  padding: 20px;
+  width: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  color:#697584;
+}
+
+.olvide-contraseña:hover {
+  color:rgba(2, 2, 2, 0.993);
+}
+
+.formulario .sign-in {
+  background:rgb(64, 174, 224);
+  border: none; 
+  border-radius: 0.31em;
+  padding: 0.5em 1em; 
+  color: #fff;
+  font-family: Montserrat;
+  cursor: pointer; 
+  font-size: 0.8em; 
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: bold; 
+}
+
+.formulario .boton i {
+  margin-right: 1em;
+  margin-left: 0;
+}
+
+.formulario .boton:hover {
+  background:rgba(248, 246, 246, 0.993);
+  color: #000;
+  font-weight: bold;
+}
+
+/* ----- Formato Recuperar Contraseña ------- */
+.forgot-password-div {
+display: grid; 
+grid-template-columns: 1fr; 
+font-family: Montserrat;
+font-weight:lighter;
+}
+
+
+.forgot-password, .ingrese-mail {
+  color: #fff;
+  text-align: center; 
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 15px;
+}
+
+.text-password  {
+  color: #fff; 
+  text-align: center;
+  width: 75%;
+  padding-left: 400px;
+  height: 50px;
+  
+}
+
+.email-password {
+  width:40%;
+  height: 45px;
+  justify-self: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.boton-mail {
+  height: 45px;
+  width: 40%;
+  justify-self: center;
+  font-size: 18px;
+  background-color: rgb(64, 174, 224);
+  color: #fff; 
+  font-weight:bold;
+}
+
+/* 404 */
+.pagina-404 {
+  /* Centrar el formulario en la imagen */
+  display: flex;
+  position: relative;
+  height: 450px;
+  width: 100%;
+  background-image:url(../img/phone.png);
+  background-size: cover;
+  background-position: center;
+  font-family: Montserrat;
+  font-weight:bold; 
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  }
+  

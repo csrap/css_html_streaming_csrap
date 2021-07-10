@@ -1,0 +1,218 @@
+
+
+/* -------   Principal ----- */
+/* .filmes-recomendados {
+  display: grid;
+  grid-template-columns: 100px minmax(200px, auto) 100px;
+  grid-auto-rows: 100px;
+}*/
+
+.filmes-recomendados .contenedor-carousel {
+  height: 120vh;
+  padding: 20px;
+  grid-column: 1 / -1;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 80px;
+}  
+
+.filmes-recomendados .contenedor-carousel .carousel .pelicula {
+display: grid;  
+grid-template-columns:  repeat(auto-fill, minmax(300px, 
+3fr));
+grid-auto-rows: 250px;
+border: solid 2px #070707;
+padding: 10px;
+padding-top: 50px;
+}
+
+.peliculas {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 9;
+}
+
+.favorito {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.description-peli {
+  display: none;
+  position: absolute;
+  max-width: 100%;
+  height: 85%;
+  top:0;
+  z-index: 15;
+  text-align: inherit;
+  background-color: rgba(27, 26, 26, 0.5);
+  color:#fff; 
+  gap:5px;
+  padding-left: 5px;
+
+}
+
+.peliculas:hover .description-peli {
+  display:grid; 
+  max-width: 90%;
+  border: 1px solid blue;
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.filmes-recomendados h1 {
+  padding-bottom: 10px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.detalle a {
+  color: whitesmoke;
+}
+
+.detalle a:hover {
+  color: #21d07a;
+}
+/*Imagenes */
+.filmes-recomendados .contenedor-carousel .carousel .pelicula { 
+  transition: .2s ease all;
+  }
+  
+  .filmes-recomendados .contenedor-carousel .carousel .pelicula:hover {
+    transform: scale(1.1);
+  }
+
+.peliculas img {
+  position: absolute;
+  width: 90%;
+  height: 85%;
+}
+
+/* Favoritos */
+
+ul {
+  position: relative;
+  display:flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+.favorito .heart {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  justify-content: right;
+}
+
+.icon  {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #18191f;
+  color: #555; 
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: -1px 1px 4px rgb(255,255,255,0.05),
+              4px 4px 6px rgba(0, 0, 0, 0.2),
+              inset -1px 1px 4px rgb(255,255,255,0.05),
+              inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.icon:before {
+  content: "";
+  position:absolute;
+  top:2px;
+  left:2px; 
+  width: calc(100% - 5px);
+  height: calc(50% - 2px);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: rgba(255,255,255,0.05);
+}
+
+.favorito .heart:checked ~ .icon {
+  box-shadow: inset 0px 0px 2px rgb(255,255,255,0.05),
+              inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.heart:checked ~ .icon .fa {
+  color:blue;
+  text-shadow: 0 0 15px blue,
+                0 0 25px blue; 
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    filter: hue-rotate(0deg);
+  }
+  100%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.percent {
+  position: relative;
+  width: 60px;
+  height: 45px;
+  display:flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.percent .number {
+  position:absolute;
+  width: 100%;
+  height: 50%;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent .number  h3 {
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.percent .number  h3 span {
+  font-size: 10px;
+}
+svg {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill:none;
+  stroke-width: 3;
+  stroke: rgb(122, 99, 99);
+  transform:translate(2px,2px);
+  stroke-linecap: round;
+}
+
+svg circle:nth-child(2) 
+{
+  stroke: #21d07a;
+  stroke-dasharray: 120px;
+  stroke-dashoffset: 5px;
+}
+
+.favorito {
+  z-index: 10px;
+  justify-items: right;
+}

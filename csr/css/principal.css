@@ -1,0 +1,187 @@
+/* ------- Filme Principal -------- */
+
+.filme-principal-luca {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff; 
+  background: linear-gradient(rgba(0, 0, 0,  .60) 0%, rgba(0, 0,0, .60) 100% ), url(../img/lucas.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: flex-end;
+  }
+  
+  .filme-principal-cruella {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff; 
+    background: linear-gradient(rgba(0, 0, 0,  .60) 0%, rgba(0, 0,0, .60) 100% ), url(../img/cruella2.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+    }
+
+    .filme-principal-viuda {
+      font-size: 16px;
+      min-height: 40.62em;
+      color: #fff; 
+      background: linear-gradient(rgba(0, 0, 0,  .60) 0%, rgba(0, 0,0, .60) 100% ), url(../img/viuda_back.jpg);
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 3.12em;
+      display: flex;
+      align-items: flex-end;
+      }
+  
+  .filme-principal-viuda .contenedor, .filme-principal-cruella .contenedor, .filme-principal-luca .contenedor {
+    margin: 30px;
+    margin-bottom: 6.25em;
+  }
+  
+  .filme-principal-viuda .title, .filme-principal-cruella .title, .filme-principal-luca .title  {
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+  }
+  
+  .filme-principal-viuda .year, .actores-text,  .filme-principal-luca .year,  .filme-principal-cruella .year {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .filme-principal-viuda .description,  .filme-principal-luca .description,  .filme-principal-cruella .description{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 100%;
+    margin-bottom: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .filme-principal-cruella .boton, .filme-principal-luca .boton, .filme-principal-viuda .boton {
+    background:rgba(0, 0,0, 0.5);
+    border: none; 
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em; 
+    color: #fff;
+    margin-right: 1.25em; 
+    cursor: pointer; 
+    transition: .3s, ease all;
+    font-size: 1.12em;
+  }
+
+  .filme-principal-cruella .boton i, .filme-principal-luca .boton i, .filme-principal-viuda .boton i {
+    margin-right: 1.25em;
+  }
+  
+  .filme-principal-cruella .boton:hover, .filme-principal-luca .boton:hover, .filme-principal-viuda .boton:hover{
+    background: #fff;
+    color: #000;
+  }
+
+  /* -------   Contenedor ppal ----- */
+  
+  .filmes-recomendados {
+    margin-bottom: 70px;
+  }
+  
+  .filmes-recomendados .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* -------   Formato Navegador responsavise------ */
+  @media screen and (max-width: 800px) {
+    header .logotipo {
+      margin-bottom: 10px;
+    }
+    header .contenedor {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  
+  
+  /*Actores*/
+  .actores img {
+    width: 100px;
+    height: 100px;
+    margin:15px; 
+    border-radius: 50%;
+  }
+
+  .actores-text {
+    font-size: 25px;
+  }
+
+  td {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    
+  }
+
+  .poster {
+    padding: 40px;
+  }
+
+  .video {
+    padding: 40px;
+  }
+
+  .percent {
+    position: relative;
+    width: 60px;
+    height: 45px;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  
+  .percent .number {
+    position:absolute;
+    widows: 100%;
+    height: 100;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .percent .number  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+  }
+  
+  .percent .number  h3 span {
+    font-size: 10px;
+  }
+  svg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  svg circle {
+    width: 100%;
+    height: 100%;
+    fill:none;
+    stroke-width: 3;
+    stroke: rgb(122, 99, 99);
+    transform:translate(2px,2px);
+    stroke-linecap: round;
+  }
+  
+  svg circle:nth-child(2) 
+  {
+    stroke: #5ff5fe;
+    stroke-dasharray: 120px;
+    stroke-dashoffset: 5px;
+  }
+  
