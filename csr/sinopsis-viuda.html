@@ -16,11 +16,11 @@
 <body>
   <header>
     <section class="contenedor">
-      <img class="logotipo" src="./img/air-play.png" alt="logo-air-play">
-      <br>
+      <div class="logotipo"> <img class="logotipo" src="./img/air-play.png" alt="logo-air-play">
+      </div>
       <nav>
         <div class="text-nav">
-          <a href="index.html">INICIO</a>
+          <a href="peliculas.html">PELICULAS</a>
           <a href="peliculas.html">NOVEDADES</a>
           <a href="#">FAVORITOS</a>
           <input type="search" placeholder="BUSCAR" class="buscar">
@@ -32,12 +32,12 @@
   </header>
 
   <main>
-    <div class="filme-principal-viuda">
-      <div class="contenedor">
+    <section class="filme-principal-viuda">
+      <section class="contenedor">
         <img src="./img/viuda_poster.jpg" alt="viuda_poster" class="poster">
-        <video src="./videos/viuda.mp4" controls width="400" height="400" class="video"></video>
-        <h3 class="title"> Viuda Negra </h3>
-        <h2 class="year">(2021)</h2>
+        <video src="./videos/viuda.mp4" controls autoplay class="video"></video>
+        <h2 class="title"> Viuda Negra </h2>
+        <h3 class="year">(2021)</h3>
         <div class="percent">
           <svg>
             <circle cx="20" cy="20" r="20"> </circle>
@@ -72,11 +72,12 @@
         <button role="button" class="boton"> <i class="fa fa-play-circle" aria-hidden="true"></i> Reproducir</button>
         <button role="button" class="boton"> <i class="fa fa-info-circle" aria-hidden="true"></i>Más
           Información</button>
-      </div>
-    </div>
-    <div class="filmes-recomendados">
+      </section>
+    </section>
+
+    <section class="filmes-recomendados">
       <h1> PELICULAS SIMILARES</h1>
-      <div class="contenedor-carousel">
+      <section class="contenedor-carousel">
         <div class="carousel">
           <div class="pelicula">
             <div class="peliculas">
@@ -95,7 +96,7 @@
               </div>
               <div class="description-peli">
                 <div class="titulo-pelicula">
-                  <h2>Vengadores:Infinity War</h2>
+                  <h4>Vengadores:Infinity War</h4>
                 </div>
                 <div class="percent">
                   <svg>
@@ -103,16 +104,18 @@
                     <circle cx="20" cy="20" r="20"> </circle>
                   </svg>
                   <div class="number">
-                    <h3>90<span>%</span></h3>
+                    <h4>90<span>%</span></h4>
                   </div>
                 </div>
-                <div class="year"> 2018 </div>
-                <div class="sinopsis-resumida">
+                <div class="year">
+                  <p> 2018 </p>
+                </div>
+                <article class="sinopsis-resumida">
                   <p>
                     El todopoderoso Thanos ha despertado con la promesa de arrasar con todo a su paso, portando el
                     Guantelete del Infinito
                   </p>
-                </div>
+                </article>
               </div>
             </div>
 
@@ -132,7 +135,7 @@
               </div>
               <div class="description-peli">
                 <div class="titulo-pelicula">
-                  <h2> "Civil War” </h2>
+                  <h4> "Civil War” </h4>
                 </div>
                 <div class="percent">
                   <svg>
@@ -140,14 +143,19 @@
                     <circle cx="20" cy="20" r="20"> </circle>
                   </svg>
                   <div class="number">
-                    <h3>90<span>%</span></h3>
+                    <h4>90<span>%</span></h4>
                   </div>
                 </div>
-                <div class="year"> 2016 </div>
-                <div class="sinopsis-resumida"> "Civil War” continúa la historia de “Avengers: Age of
-                  Ultron”, con Steve Rogers liderando un nuevo equipo de Vengadores..</div>
+                <div class="year">
+                  <p> 2016 </p>
+                </div>
+                <article class="sinopsis-resumida">
+                  <p>
+                    "Civil War” continúa la historia de “Avengers: Age of
+                    Ultron”, con Steve Rogers liderando un nuevo equipo de Vengadores..
+                  </p>
+                </article>
               </div>
-
             </div>
 
             <div class="peliculas">
@@ -166,7 +174,7 @@
               </div>
               <div class="description-peli">
                 <div class="titulo-pelicula">
-                  <h2>Vengadores:Era Ultrón</h2>
+                  <h4>Vengadores:Era Ultrón</h4>
                 </div>
                 <div class="percent">
                   <svg>
@@ -177,15 +185,23 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2021 </div>
-                <div class="sinopsis-resumida"> Cuando Tony Stark intenta reactivar un programa caído en desuso cuyo
-                  objetivo es mantener la paz...
+                <div class="year">
+                  <p>
+                    2021
+                  </p>
                 </div>
+
+                <article class="sinopsis-resumida">
+                  <p>
+                    Cuando Tony Stark intenta reactivar un programa caído en desuso cuyo
+                    objetivo es mantener la paz...
+                  </p>
+                </article>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   </main>
 </body>

@@ -16,11 +16,12 @@
 <body>
   <header>
     <section class="contenedor">
-      <img class="logotipo" src="./img/air-play.png" alt="logo-air-play">
-      <br>
+      <div class="logotipo">
+        <img src="./img/air-play.png" alt="logo-air-play">
+      </div>
       <nav>
         <div class="text-nav">
-          <a href="index.html">INICIO</a>
+          <a href="peliculas.html">PELICULAS</a>
           <a href="peliculas.html">NOVEDADES</a>
           <a href="#">FAVORITOS</a>
           <input type="search" placeholder="BUSCAR" class="buscar">
@@ -32,10 +33,10 @@
   </header>
 
   <main>
-    <div class="filme-principal-luca">
+    <section class="filme-principal-luca">
       <div class="contenedor">
         <img src="./img/luca_poster.jpg" alt="luca_poster" class="poster">
-        <video src="./videos/Lucas.mp4" controls width="400" height="400" class="video"></video>
+        <video src="./videos/Lucas.mp4" controls autoplay class="video"></video>
         <h3 class="title"> Luca </h3>
         <h2 class="year">(2021)</h2>
         <div class=" percent">
@@ -73,10 +74,11 @@
         <button role="button" class="boton"> <i class="fa fa-info-circle" aria-hidden="true"></i>Más
           Información</button>
       </div>
-    </div>
-    <div class="filmes-recomendados">
+    </section>
+
+    <section class="filmes-recomendados">
       <h1> PELICULAS SIMILARES</h1>
-      <div class="contenedor-carousel">
+      <section class="contenedor-carousel">
         <div class="carousel">
           <div class="pelicula">
             <div class="peliculas">
@@ -106,13 +108,17 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2021</div>
-                <div class="sinopsis-resumida">
+                <div class="year">
+                  <p>
+                    2021
+                  </p>
+                </div>
+                <article class="sinopsis-resumida">
                   <p>
                     Din es un adolescente que ansía volver a ver a su mejor amiga de la infancia. Un dragón que concede
                     deseos le mostrará la magia.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
 
@@ -143,11 +149,18 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2021 </div>
-                <div class="sinopsis-resumida"> Raya, una niña de gran espíritu aventurero, se embarca en la búsqueda
-                  del último dragón del mundo con el objetivo de devolver el equilibrio</div>
+                <div class="year">
+                  <p>
+                    2021
+                  </p>
+                </div>
+                <article class="sinopsis-resumida">
+                  <p>
+                    Raya, una niña de gran espíritu aventurero, se embarca en la búsqueda
+                    del último dragón del mundo con el objetivo de devolver el equilibrio
+                  </p>
+                </article>
               </div>
-
             </div>
 
             <div class="peliculas">
@@ -177,19 +190,23 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2014 </div>
-                <div class="sinopsis-resumida"> En la metrópolis de San Fransokyo (cruce de San Francisco y Tokio), vive
-                  Hiro Hamada, quien aprende a sacar provecho de su capacidad..
+                <div class="year">
+                  <p>
+                    2014
+                  </p>
                 </div>
+                <article class="sinopsis-resumida">
+                  <p>
+                    En la metrópolis de San Fransokyo (cruce de San Francisco y Tokio),
+                    vive
+                    Hiro Hamada, quien aprende a sacar provecho de su capacidad..
+                  </p>
+                </article>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-
-
-
+      </section>
+    </section>
   </main>
 </body>

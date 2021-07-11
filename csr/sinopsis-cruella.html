@@ -16,11 +16,12 @@
 <body>
   <header>
     <section class="contenedor">
-      <img class="logotipo" src="./img/air-play.png" alt="logo-air-play">
-      <br>
+      <div class="logotipo">
+        <img class="logotipo" src="./img/air-play.png" alt="logo-air-play">
+      </div>
       <nav>
         <div class="text-nav">
-          <a href="index.html">INICIO</a>
+          <a href="peliculas.html">PELICULAS</a>
           <a href="peliculas.html">NOVEDADES</a>
           <a href="#">FAVORITOS</a>
           <input type="search" placeholder="BUSCAR" class="buscar">
@@ -32,10 +33,10 @@
   </header>
 
   <main>
-    <div class="filme-principal-cruella">
-      <div class="contenedor">
+    <section class="filme-principal-cruella">
+      <section class="contenedor">
         <img src="./img/cruella_poster.jpg" alt="cruella_poster" class="poster">
-        <video src="./videos/Cruella.mp4" controls width="400" height="400" class="video"></video>
+        <video src="./videos/Cruella.mp4" controls autoplay class="video"></video>
         <h3 class="title"> Cruella </h3>
         <h2 class="year">(2021)</h2>
         <div class="percent">
@@ -64,21 +65,22 @@
               <td><strong><img src="./img/Joel Fry.png" alt="Joel"></strong></td>
             </tr>
             <tr>
-              <td>Enna Bernan</td>
+              <td>Emma Bernan</td>
               <td> Jack Dylan</td>
               <td>Jacon Tremblay</td>
             </tr>
           </table>
         </div>
-        <br>
         <button role="button" class="boton"> <i class="fa fa-play-circle" aria-hidden="true"></i> Reproducir</button>
         <button role="button" class="boton"> <i class="fa fa-info-circle" aria-hidden="true"></i>Más
           Información</button>
-      </div>
-    </div>
-    <div class="filmes-recomendados">
+      </section>
+    </section>
+
+
+    <section class="filmes-recomendados">
       <h1> PELICULAS SIMILARES</h1>
-      <div class="contenedor-carousel">
+      <section class="contenedor-carousel">
         <div class="carousel">
           <div class="pelicula">
             <div class="peliculas">
@@ -108,13 +110,15 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2016</div>
-                <div class="sinopsis-resumida">
+                <div class="year">
+                  <p> 2016 </p>
+                </div>
+                <article class="sinopsis-resumida">
                   <p>
                     Mia, una joven aspirante a actriz que compagina los castings con su trabajo de camarera, y
                     Sebastian, un pianista de jazz
                   </p>
-                </div>
+                </article>
               </div>
             </div>
 
@@ -145,11 +149,18 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2020 </div>
-                <div class="sinopsis-resumida"> Después de separarse del Joker, Harley Quinn y otras tres heroínas
-                  (Canario Negro, Cazadora y Renée Montoya) unen sus fuerzas</div>
+                <div class="year">
+                  <p>
+                    2020
+                  </p>
+                </div>
+                <article class="sinopsis-resumida">
+                  <p>
+                    Después de separarse del Joker, Harley Quinn y otras tres heroínas
+                    (Canario Negro, Cazadora y Renée Montoya) unen sus fuerzas
+                  </p>
+                </article>
               </div>
-
             </div>
 
             <div class="peliculas">
@@ -179,15 +190,23 @@
                     <h3>90<span>%</span></h3>
                   </div>
                 </div>
-                <div class="year"> 2016 </div>
-                <div class="sinopsis-resumida"> Mientras el gobierno de EE.UU no tiene claro cómo responder a una visita
-                  alienígena a la Tierra con intenciones malignas..
+                <div class="year">
+                  <p>
+                    2016
+                  </p>
                 </div>
+                <article class="sinopsis-resumida">
+                  <p>
+                    Mientras el gobierno de EE.UU no tiene claro cómo responder a una
+                    visita
+                    alienígena a la Tierra con intenciones malignas..
+                  </p>
+                </article>
               </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </section>
+
   </main>
 </body>
