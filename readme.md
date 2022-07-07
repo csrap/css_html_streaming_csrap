@@ -2,7 +2,7 @@
 
 - Creación de una pagina web de tipo streamig, similar a netflix, HBO o disney+
 
-- Para acceder al archivo realice el clone del repositorio con el siguiente link en su editor de texto de preferencia: https://github.com/csrap/css_html_streamig_csrap.git.
+- Para acceder al archivo realice el clone del repositorio con el siguiente link en su editor de texto de preferencia: https://github.com/csrap/css_html_streaming_csrap.git.
 
 Una vez estando el repositorio clonada para acceder a las paginas de las peliculas, de debe usar con el
 **BrowserSync** en la carpeta llamada **CSR**
